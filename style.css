@@ -3,20 +3,38 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-h2 {
+.project-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+}
+
+.name {
     font-family: 'Roboto', sans-serif;
+    font-size: 50px;
 }
 
 .container-fluid {
     display: flex;
     height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.6s ease;
 }
 
-.title {
+.container-fluid:nth-of-type(even) { 
+    transform: translateX(-400%);
+}
+
+.container-fluid.show {
+    transform: translateX(0);
+}
+
+.text {
     display: flex;
     flex-direction: column;
     width: 100%;
