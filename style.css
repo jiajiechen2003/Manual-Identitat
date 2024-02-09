@@ -13,7 +13,17 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
 
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -37,13 +47,25 @@ body {
     flex-direction: row;
 }
 .third-slide {
-    background-color: #e9c46a;
+    background:url(img/bg.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 .fourth-slide {
-    background-color: #f4a261;
+    background:url(img/bg.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 .fifth-slide {
-    background-color: #e76f51;
+    background:url(img/bg.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 div[class$="slide"]{
@@ -58,6 +80,7 @@ div[class$="slide"]{
     transform: translateX(-100%);
     transition: transform 0.6s ease;
     margin: 0;
+    align-items: center;
  }
 
 .container-fluid.show {
@@ -87,6 +110,7 @@ div[class$="slide"]{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
 }
 
 .color-palette {
@@ -205,4 +229,41 @@ div [class^="color"]{
     height: 30px;
     margin-right: 15px;
 }
+
+.container-fluid.color-usage {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+}
+.col-6 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px !important;
+}
+.correct-use {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.incorrect-use {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.col-12 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+}
+
 /* 264653-2a9d8f-e9c46a-f4a261-e76f51 */
