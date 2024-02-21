@@ -36,37 +36,24 @@ h3 {
     background: linear-gradient(aquamarine, fuchsia);
 }
 
+.row {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .first-slide {
     background:url(img/bg.avif);
 }
-.second-slide {
+
+.content-slide {
     background:url(img/bg.avif);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-.third-slide {
-    background:url(img/bg.avif);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.fourth-slide {
-    background:url(img/bg.avif);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.fifth-slide {
-    background:url(img/bg.avif);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
+
 
 div[class$="slide"]{
     scroll-snap-align: start;
@@ -266,4 +253,13 @@ div [class^="color"]{
     margin-bottom: 25px !important;
 }
 
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    justify-content: center;
+    text-align: center;
+}
 /* 264653-2a9d8f-e9c46a-f4a261-e76f51 */
